@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="w3.css"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Delius&display=swap');
+        </style>
+        <title> Nessa's Website</title>
+        <link rel="icon" type="image/x-icon" href="flower.png">
+        <!-- Link to the external JavaScript file with defer -->
+        <script src="main.js" defer></script>
+    </head>
+
+    <body>
+        <div class="big">
+            <br>
+            <div class="one">
+                <h1 class="heading-text"> Welcome to my Website!</h1>
+                <h3 class="heading-text"> Lorem ipsum dolor sit amet</h3>
+                <br>
+            </div>
+            
+            <div class="w3-bar" id="bar">
+                <button class="w3-bar-item w3-button tablink tab w3-brown" onclick="openCity(event,'LoremIpsum');" id="Tab1">
+                    <img id="Tab1Img" src="book_3_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png"> Tab 1
+                </button>
+                <button class="w3-bar-item w3-button tablink w3-brown tab" onclick="openCity(event,'DolorSitAmet');" id="Tab2">
+                    <img id="Tab2Img" src="videocam_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png"> Tab 2
+                </button>
+            </div>
+
+            <div id="LoremIpsum" class="w3-container city info heading-text">
+                <h1>Lorem Ipsum</h1>
+                <button class="w3-button w3-brown w3-round-xlarge w3-hover-black london-button" href="#"> Placeholder Button 1</button>
+                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h3>
+            </div>
+
+            <div id="DolorSitAmet" class="w3-container city info heading-text" style="display:none">
+                <h1>Dolor Sit Amet</h1>
+                <button class="w3-button w3-white w3-round-xlarge w3-hover-black london-button" href="#"> Placeholder Button 2</button>
+                <h3>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h3>
+            </div>
+
+            <!-- Admin Panel Button -->
+            <div class="admin-panel">
+                <a href="login.html" class="w3-button w3-blue w3-round-xlarge w3-hover-black">Admin Panel</a>
+            </div>
+        </div>
+
+        <div class="credits">
+            <h2>© 2025 Placeholder Credits</h2>
+            <h3>Made by Placeholder Author</h3>
+        </div>
+    </body>
+</html>

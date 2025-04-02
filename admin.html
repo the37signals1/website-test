@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Panel</title>
+</head>
+<body>
+    <h1>Admin Panel</h1>
+    <form method="POST" action="/update">
+        <label for="new_tab">New Tab Name:</label>
+        <input type="text" id="new_tab" name="new_tab" required>
+        <br>
+        <label for="new_content">New Content:</label>
+        <textarea id="new_content" name="new_content" required></textarea>
+        <br>
+        <button type="submit">Add Tab</button>
+    </form>
+    <h2>Existing Tabs</h2>
+    <ul>
+        {% for tab in data.tabs %}
+        <li>{{ tab.tab }}: {{ tab.content }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

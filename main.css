@@ -1,0 +1,268 @@
+/* General Styles */
+body {
+    font-family: "Delius";
+    background: repeating-linear-gradient(
+        to right,
+        #FCFBF7,
+        #FCFBF7 2.5%,
+        #EEEBD8 2.5%,
+        #EEEBD8 5%
+    );
+    animation: fadeIn 1.5s ease-in-out; /* Apply fade-in animation to the body */
+}
+
+.heading-text {
+    color: rgb(255, 225, 210);
+    text-shadow: rgb(85, 18, 10) 2px 5px;
+    text-align: center; /* Center the text */
+    min-width: fit-content; /* Prevent the text from exceeding the container's width */
+    margin: 0 auto; /* Center the heading within the div */
+    padding: 0 10px; /* Add padding to prevent text from touching the edges */
+    box-sizing: border-box; /* Include padding in the element's total width */
+}
+
+/* Container Styles */
+.one {
+    background-color: #8D5641;
+    width: 30%;
+    border-style: solid;
+    border-width: 4%;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 30px;
+    box-shadow: 10px 10px 10px;
+    padding-top: 20px;
+    margin-bottom: 30px;
+    animation: slideIn 1s ease-in-out; /* Apply slide-in animation to the heading */
+}
+
+/* Tab container styles */
+#bar {
+    display: flex; /* Use flexbox for alignment */
+    align-items: flex-end; /* Align tabs to the bottom */
+    width: fit-content;
+    border-radius: 10px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    font-family: "Delius";
+    margin-left: 3%;
+    border-style: none;
+    box-shadow: 10px 10px 10px black;
+    animation: slideIn 1.2s ease-in-out; /* Apply slide-in animation to the tabs */
+}
+
+.info {
+    background-color: #795548;
+    border-color: #795548;
+    font-family: "Delius";
+}
+
+.big {
+    width: 98%;
+    height: fit-content;
+    border-style: solid;
+    margin: 0 auto;
+    margin-top: 5%;
+    border-radius: 30px;
+    border-color: #563304;
+    border-width: 10px;
+    box-shadow: 10px 10px 10px;
+    background: repeating-linear-gradient(
+        to right,
+        #9C7764,
+        #9C7764 1%,
+        #734E3B 1%,
+        #734E3B 2%
+    );
+    animation: slideIn 1.4s ease-in-out; /* Apply slide-in animation to the divs */
+}
+
+/* Tab Styles */
+.tab {
+    height: max-content;
+    background-color: inherit; /* Use the same background as the body for consistency */
+}
+
+/* Default tab styles */
+.w3-bar .tablink {
+    display: flex; /* Use flexbox for horizontal alignment */
+    align-items: center; /* Vertically center content */
+    justify-content: center; /* Center content horizontally */
+    gap: 8px; /* Add spacing between the image and text */
+    margin: 0;
+    padding: 8px 12px; /* Add padding for better spacing */
+    text-align: center;
+    font-family: "Delius";
+    border: none; /* Remove default button borders */
+    cursor: pointer; /* Add pointer cursor for better UX */
+    height: 50px; /* Default height for tabs */
+    transition: height 0.2s ease, box-shadow 0.2s ease; /* Smooth animation */
+}
+
+/* Hover effect: Keep the tab at default height */
+.w3-bar .tablink:hover {
+    height: 50px; /* Keep the default height */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Add a shadow for depth */
+}
+
+/* Active effect: Shrink the tab slightly when clicked */
+.w3-bar .tablink:active {
+    height: 40px; /* Reduce height slightly */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Reduce shadow */
+}
+
+/* Keep the clicked tab shrunk */
+.w3-bar .tablink.active-tab {
+    height: 40px; /* Stay shrunk */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Consistent shadow */
+}
+
+/* Specific Tab Styles */
+#Ao3 {
+    background-color: #ECB69C; /* Blue color for Ao3 tab */
+    filter: brightness(0.9); /* Optional: Darken the background for better contrast */
+    color: white; /* Text color */
+    
+}
+
+#edits {
+    background-color: #795548; /* Brown color for Edits tab */
+    color: white; /* Text color */
+
+}
+
+/* Div Styles for Tabs */
+#London {
+    background-color: #ECB69C; /* Blue color for Ao3 div */
+    color: white; /* Text color */
+    filter: brightness(0.9); /* Optional: Darken the background for better contrast */
+    border-radius: 20px;
+    width:98%;
+    margin-left: 1%;
+    margin-bottom:3%;
+    border-style: none;
+    border-color: black;
+    box-shadow: 10px 10px 10px black;
+}
+.london-button:hover{
+    transform: translateY(-5px); /* Push the button down */
+}
+
+#Paris {
+    background-color: #795548; /* Brown color for Edits div */
+    color: white; /* Text color */
+    border-radius: 20px;
+    width:98%;
+    margin-left: 1%;
+    margin-bottom:3%;
+    border-style: none;
+    border-color: black;
+    box-shadow: 10px 10px 10px black;
+
+}
+
+/* Image Styles */
+button img {
+    display: inline-block; /* Ensure the image stays inline */
+    width: 24px; /* Adjust image size */
+    height: 24px; /* Ensure consistent height */
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 30%;
+}
+
+/* Default button styles with shadow */
+.w3-button {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+    transition: box-shadow 0.3s ease, transform 0.2s ease; /* Smooth animation */
+}
+
+/* Hover effect: Increase shadow*/
+.w3-button:hover {
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+
+   
+}
+
+/* Active effect: Reduce shadow and push the button down */
+.w3-button:active {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow on click */
+    transform: translateY(5px); /* Push the button down */
+}
+
+/* Style for the "Newest release" label */
+.new-release {
+    color: yellow; /* Yellow text color */
+    font-size: 0.8em; /* Slightly smaller than the title */
+    font-weight: bold; /* Make it bold */
+    margin-left: 10px; /* Add some space between the title and the label */
+    background-color: #333; /* Optional: Add a dark background for contrast */
+    padding: 2px 6px; /* Optional: Add padding for better appearance */
+    border-radius: 4px; /* Optional: Round the corners */
+}
+.credits{
+    text-align: center; /* Center the text */
+    font-family: "Delius", sans-serif; /* Match the font style */
+    font-size: 1rem; /* Adjust font size */
+    color: #795548; /* Brown text color */
+    margin-top: 20px; /* Add spacing above the credits */
+    padding: 10px; /* Add padding for better spacing */
+    background-color: #FCFBF7; /* Optional: Light background color */
+    border-top: 1px solid #EEEBD8; /* Optional: Add a top border */
+}
+
+.credits a {
+    color: #465298; /* Link color */
+    text-decoration: none; /* Remove underline */
+}
+
+.credits a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+/* Fade-in animation for the entire site */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Slide-in animation for the heading and tabs */
+@keyframes slideIn {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Target devices with a max width of 768px (tablets and smartphones) */
+@media (max-width: 768px) {
+    .heading-text {
+        font-size: 1.5rem; /* Reduce font size for smaller screens */
+    }
+
+    #bar {
+        margin-left: 5%; /* Move the tab container slightly to the right */
+    }
+}
+
+/* Target smaller devices with a max width of 480px (smartphones) */
+@media (max-width: 480px) {
+    .heading-text {
+        font-size: 1.2rem; /* Further reduce font size for very small screens */
+    }
+
+    #bar {
+        margin-left: 10%; /* Move the tab container further to the right for smaller screens */
+    }
+}
